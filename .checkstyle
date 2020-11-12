@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="maven-checkstyle-plugin checkstyle-validation" location="jar:file:/C:/Users/lucas_000/.m2/repository/org/springframework/cloud/spring-cloud-build-tools/3.0.0-SNAPSHOT/spring-cloud-build-tools-3.0.0-SNAPSHOT.jar!/checkstyle.xml" type="remote" description="maven-checkstyle-plugin configuration checkstyle-validation">
+    <property name="checkstyle.build.directory" value="C:\Users\lucas_000\git\spring-cloud-gcp\spring-cloud-gcp-samples\spring-cloud-gcp-sql-mysql-sample\target
+								checkstyle.suppressions.file=${checkstyle.suppressions.file}
+								checkstyle.additional.suppressions.file=${checkstyle.additional.suppressions.file}"/>
+    <property name="checkstyle.header.file" value="C:\Users\lucas_000\eclipse-workspace2\.metadata\.plugins\org.eclipse.core.resources\.projects\spring-cloud-gcp-sql-mysql-sample\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-checkstyle-validation.txt"/>
+    <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
+  </local-check-config>
+  <fileset name="java-sources-checkstyle-validation" enabled="true" check-config-name="maven-checkstyle-plugin checkstyle-validation" local="true">
+    <file-match-pattern match-pattern="^src/main/java/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/test/java/.*\.java" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/main/resources/.*\.properties" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/main/resources/.*\.properties" include-pattern="true"/>
+    <file-match-pattern match-pattern="^src/test/resources/.*\.properties" include-pattern="true"/>
+  </fileset>
+</fileset-config>
